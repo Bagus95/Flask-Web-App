@@ -1,0 +1,21 @@
+	{% extends 'layout.html' %}
+
+	{% block body %}	
+	<div class="jumbotron text-center">
+		<h1>Selamat Datang di Flask</h1>
+		<p class="lead">Flask adalah microframework untuk Python yang dibuat dengan toolkit wsgi dan Jinja2. Flask pertama kali dibuat oleh Armin Ronacher. Pertama kali dirilis 7 tahun yang lalu (April 2010), Flask saat ini berada di versi 0.12.2 dan dilisensikan dengan BSD license.
+
+		Aplikasi web yang dibuat dengan Flask disimpan dalam satu berkas .py . Flask bisa menjadi web framework yang sederhana namun dapat diperluas dengan beragam pustaka tambahan yang sesuai dengan kebutuhan penggunanya.</p>
+		{% if session.logged_in == NULL %}
+			<a href="/register" class="btn btn-primary btn-lg btn-block">
+				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				Register
+			</a>
+			<hr>
+			<a href="/login" class="btn btn-success btn-lg btn-block">
+				<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+				Log In
+			</a>
+		{% endif %}
+	</div>
+	{% endblock %}
