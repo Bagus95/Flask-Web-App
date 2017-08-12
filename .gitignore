@@ -1,0 +1,13 @@
+### Linux ###
+*~
+
+# temporary files 
+.pyc*
+.json*
+
+# ignored directory
+venv
+.__pycache__
+.idea
+
+# End 
